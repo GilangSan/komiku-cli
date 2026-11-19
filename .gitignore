@@ -1,0 +1,9 @@
+node_modules/
+npm-debug.log*
+*.log
+.DS_Store
+.env
+
+# REA capture bundles (large; regenerate with evidence/recon.md)
+evidence/*.json
+*.tgz

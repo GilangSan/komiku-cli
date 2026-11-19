@@ -1,0 +1,50 @@
+{
+  "name": "komiku",
+  "version": "1.0.0",
+  "description": "Reverse-engineered Node client for komiku.org (home, search, ranking, series detail, chapters, page images).",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js"
+    }
+  },
+  "bin": {
+    "komiku": "bin/cli.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node test/selfcheck.js",
+    "cli": "node bin/cli.js",
+    "prepublishOnly": "node test/selfcheck.js --offline"
+  },
+  "keywords": [
+    "komiku",
+    "komik",
+    "manga",
+    "manhwa",
+    "manhua",
+    "scraper",
+    "api",
+    "client"
+  ],
+  "author": "GilangSan",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GilangSan/komiku-cli.git"
+  },
+  "homepage": "https://github.com/GilangSan/komiku-cli#readme",
+  "bugs": {
+    "url": "https://github.com/GilangSan/komiku-cli/issues"
+  },
+  "license": "MIT"
+}
